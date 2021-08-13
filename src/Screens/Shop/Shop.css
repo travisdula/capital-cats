@@ -1,11 +1,17 @@
-.shop-modal-header {
-    color: aqua;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-
-
-/* Please ❤ this if you like it! */
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
@@ -13,6 +19,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 body{
 	font-family: 'Poppins', sans-serif;

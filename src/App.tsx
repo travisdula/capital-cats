@@ -17,12 +17,12 @@ function App() {
   }
 
   return (
-    <div className="App grid place-items-center max-h-full max-w-full overflow-hidden">
+    <div className="App grid place-items-center max-h-full overflow-hidden ">
         <img
             src={Background}
             //style={{height:"700px", width:"450px"}}
             alt="Background"
-            className=""
+            className="max-h-screen"
         />
       <Account showAccount = {showAccount} handleShowAccount = {toggleAccount}/>
       <Shop showShop = {showShop} handleShowShop = {toggleShop}/>

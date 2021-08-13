@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Shop} from './Screens/Shop/Shop'
-import { Navbar } from './Screens/Navbar/Navbar'
-import Background  from './Resources/cat 2.jpg'
+import { Account } from './Screens/Account/Account';
+import { Shop } from './Screens/Shop/Shop';
+import Background from './Resources/cat 2.jpg';
 
 function App() {
+  const [showAccount, setShowAccount] = useState(true);
+  const toggleAccount = () => {
+    setShowAccount(!showAccount);
+  }
+
   const [showShop, setShowShop] = useState(true);
-  const handleShowShop = () => {
+  const toggleShop = () => {
     setShowShop(!showShop);
   }
+
   return (
     <div className="App">
-      <img src = {Background} style={{height:"700px", width:"450px"}}/>
-      <Shop
-        showShop = {showShop}
-        handleShowShop = {handleShowShop}/>
+      <img src = {Background} style={{height:"700px", width:"450px"}} alt="Background"/>
+      <Account showAccount = {showAccount} handleShowAccount = {toggleAccount}/>
+      <Shop showShop = {showShop} handleShowShop = {toggleShop}/>
     </div>
   );
 }

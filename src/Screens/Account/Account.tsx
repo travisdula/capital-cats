@@ -15,7 +15,30 @@ export const Account = ({showAccount, handleShowAccount} : accountProps) => {
 
       <div className="modal">
         <div className="modal-wrap">
-          <p>Account goes here</p>
+          <div className="summary">
+            <h3>You saved <b>$180.54</b> this month!</h3>
+            <p><b>$14.07</b> more than last month!</p>
+            <p>Your savings gained you <i>42 kibble koins</i> for your cats!</p>
+          </div>
+
+          <h5>View your savings in detail</h5>
+          <div className="row">
+            <div className="column1">
+              <p>Visa ...1234</p>
+            </div>
+            <div className="column2">
+              <p>$582.17</p>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="column1">
+              <p>Capital One ...3214</p>
+            </div>
+            <div className="column2">
+              <p>$2,871.11</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Shop.css';
 import catEmpty from '../../Resources/cat_1_dress.png'
 import catHat from '../../Resources/cat_hat.png'
@@ -16,9 +16,10 @@ interface shopProps {
   acc : number;
   handleSetAcc : (feature:number) => void;
 }
+
 export const Shop = ({showShop, handleShowShop, acc, handleSetAcc} : shopProps) => {
-  const catDress = acc == 0 ? catEmpty : acc == 1 ? catHat : acc == 2 ? catBoot : acc == 4 ? theFatCat: catHatBoot;
-  const catLine = acc == 0 || acc == 1 ? "Meow... wish I had some boots.. mew.." : acc == 2 ? "Meow.. wish I had a hat.. 3: ..": acc == 3 ? "*beatboxes* boots and cats boots..": "Too many fishe .. *burp*" ;
+  const catDress = acc === 0 ? catEmpty : acc === 1 ? catHat : acc === 2 ? catBoot : acc === 4 ? theFatCat: catHatBoot;
+  const catLine = acc === 0 || acc === 1 ? "Meow... I wish I had some boots... Mew..." : acc === 2 ? "Meow... I wish I had a hat... :3": acc === 3 ? "*beatboxes* Boots and cats and boots...": "Too many fishe... *burp*";
   return (
         <div className="section full-height">
         <input className="modal-btn"  style={{paddingLeft: "500px"}} type="checkbox" id="modal-btn" name="modal-btn"/>
@@ -28,13 +29,13 @@ export const Shop = ({showShop, handleShowShop, acc, handleSetAcc} : shopProps) 
         <img src={catDress} alt=""/>
         <div className="row">
           <div className="column">
-          <img src={hat} onClick={() => handleSetAcc(1)}  style={{width:"100%"}}/>
+          <img src={hat} onClick={() => handleSetAcc(1)}  style={{width:"100%"}} alt="Hat"/>
           </div>
           <div className="column">
-            <img src={boot} onClick={() => handleSetAcc(2)} style={{width:"100%"}}/>
+            <img src={boot} onClick={() => handleSetAcc(2)} style={{width:"100%"}} alt="Boots"/>
           </div>
           <div className="column">
-            <img src={food} onClick={() => handleSetAcc(4)} style={{width:"100%"}}/>
+            <img src={food} onClick={() => handleSetAcc(4)} style={{width:"100%"}} alt="Food"/>
           </div>
         </div>
         <p className="css-typing">{catLine}</p>

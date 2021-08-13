@@ -23,6 +23,41 @@ body {
   background-size: 101%;
 }
 
+.modal-wrap {
+  padding: 0 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-wrap * {
+  padding: 0 5px;
+}
+
+.summary {
+  background-color: #ccc;
+}
+
+.row {
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.column1 {
+  float: left;
+}
+
+.column2 {
+  float: right;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -182,10 +217,6 @@ p {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.modal-wrap p {
-  padding: 20px 30px 0 30px;
 }
 
 .account-btn:checked~.modal .modal-wrap {

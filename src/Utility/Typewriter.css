@@ -1,9 +1,10 @@
 body {
-  font-family: 'Lucida Console', Consolas;  
+  font-family: 'Lucida Console', Consolas;
   font-size: 20px;
 }
 .css-typing {
-  width: 20em;
+  margin: auto;
+  width: auto;
   white-space:nowrap;
   overflow:hidden;
   -webkit-animation: type 3s steps(356, end);

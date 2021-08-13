@@ -18,11 +18,11 @@ function App() {
   }
 
   const handleSetAcc = (featureNum : number) => {
-    if(acc == 0 || (acc == 4 || featureNum == 4))
+    if(acc === 0 || (acc === 4 || featureNum === 4))
      {
        setAcc(featureNum); // boots or hat
      }
-    else if(acc != featureNum && acc != 4)
+    else if(acc !== featureNum && acc !== 4)
     {
        setAcc(3);//both hat and boots
     }
@@ -33,6 +33,7 @@ function App() {
         <img
             src={Background}
             style={{height:"700px", width:"450px"}}
+            alt="Background"
         />
       <Account showAccount = {showAccount} handleShowAccount = {toggleAccount}/>
       <Shop showShop = {showShop} handleShowShop = {toggleShop} acc={acc} handleSetAcc={handleSetAcc}/>

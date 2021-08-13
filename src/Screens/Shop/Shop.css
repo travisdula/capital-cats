@@ -19,7 +19,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  
+
 }
 body{
 	font-family: 'Poppins', sans-serif;
@@ -114,7 +114,7 @@ p{
   background-color: #ffeba7;
   color: #102770;
   font-family: 'unicons';
-  content: '\eac6'; 
+  content: '\eac6';
   box-shadow: 0 12px 25px 0 rgba(16,39,112,.25);
   transition: all 200ms linear;
   opacity: 0;
@@ -182,9 +182,7 @@ p{
   width: 100%;
   height: auto;
 }
-.modal-wrap p {
-  padding: 20px 30px 0 30px;
-}
+
 .modal-btn:checked ~ .modal .modal-wrap{
   opacity: 1;
   transform: scale(1);

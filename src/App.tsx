@@ -33,8 +33,6 @@ function App() {
         <img
             src={Background}
             style={{height:"700px", width:"450px"}}
-            alt="Background"
-            className="max-h-screen"
         />
       <Account showAccount = {showAccount} handleShowAccount = {toggleAccount}/>
       <Shop showShop = {showShop} handleShowShop = {toggleShop} acc={acc} handleSetAcc={handleSetAcc}/>

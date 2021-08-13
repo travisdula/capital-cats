@@ -14,7 +14,7 @@ export const Shop = ({showShop, handleShowShop} : shopProps) => {
   return (
         
         <div className="section full-height">
-        <input className="modal-btn"  style={{paddingLeft: "500px"}} type="checkbox" id="modal-btn" name="modal-btn"/>
+        <input className="modal-btn"  style={{paddingLeft: "500px"}} type="checkbox" id="modal-btn" name="modal-btn" onClick={handleShowShop}/>
         <label htmlFor="modal-btn" style={{marginBottom:"200px", marginLeft:"300px", width:"80px"}}>Shop<i className="uil uil-expand-arrows"></i></label> 		
         <div className="modal">		
         <div className="modal-wrap">	

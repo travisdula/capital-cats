@@ -8,6 +8,7 @@ import theFatCat from '../../Resources/the_fat_cat.png'
 import boot from '../../Resources/boots.png'
 import hat from '../../Resources/hat.png'
 import food from '../../Resources/cat_food_.png'
+import background from "../../Resources/bg_2.png"
 import '../../Utility/Typewriter.css'
 
 interface shopProps {
@@ -24,7 +25,8 @@ export const Shop = ({showShop, handleShowShop, acc, handleSetAcc} : shopProps) 
         <input className="modal-btn"  style={{paddingLeft: "500px"}} type="checkbox" id="modal-btn" name="modal-btn"/>
         <label htmlFor="modal-btn" style={{marginBottom:"200px", marginLeft:"300px", width:"80px"}}>Shop<i className="uil uil-expand-arrows"></i></label>
         <div className="modal">
-        <div className="modal-wrap">
+        <div className="modal-wrap" style={{ 
+     backgroundImage: `url(${background})` }}>
         <img src={catDress} alt=""/>
         <div className="row">
           <div className="column">

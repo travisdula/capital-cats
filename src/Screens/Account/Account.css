@@ -234,28 +234,6 @@ p {
   transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }
 
-.logo {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  z-index: 1000;
-  transition: all 250ms linear;
-}
-
-.logo img {
-  height: 26px;
-  width: auto;
-  display: block;
-  filter: brightness(10%);
-  transition: filter 250ms 700ms linear;
-}
-
-.account-btn:checked~.logo img {
-  filter: brightness(100%);
-  transition: all 250ms linear;
-}
-
 @media screen and (max-width: 500px) {
   .modal-wrap {
     width: calc(100% - 40px);

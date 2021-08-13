@@ -22,13 +22,13 @@ export const Shop = ({showShop, handleShowShop} : shopProps) => {
         <img src={cat1} alt=""/>
         <div className="row">
           <div className="column">
-          <img src={hat} style={{width:"100%"}}/>
+          <img src={hat} style={{width:"100%"}} alt=""/>
           </div>
           <div className="column">
-            <img src={boot} style={{width:"100%"}}/>
+            <img src={boot} style={{width:"100%"}} alt=""/>
           </div>
           <div className="column">
-            <img src={food} style={{width:"100%"}}/>
+            <img src={food} style={{width:"100%"}} alt=""/>
           </div>
         </div>
         <p className="css-typing">Meow... wish I had some boots.. mew..</p>

@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import './App.css';
 import { Account } from './Screens/Account/Account';
 import { Shop } from './Screens/Shop/Shop';
-import Background from './Resources/cat 2.jpg';
+import Background from './Resources/bg_3.png';
 
 function App() {
   const [showAccount, setShowAccount] = useState(true);
+  const[acc, setAcc] = useState(0);//0 -> empty , 1 -> hat , 2 -> boot , 3 -> boot + hat
   const toggleAccount = () => {
     setShowAccount(!showAccount);
   }
@@ -15,6 +16,17 @@ function App() {
   const toggleShop = () => {
     setShowShop(!showShop);
   }
+
+  const handleSetAcc = (featureNum : number) => {
+    if(acc == 0 || (acc == 4 || featureNum == 4))
+     {
+       setAcc(featureNum); // boots or hat
+     }
+    else if(acc != featureNum && acc != 4)
+    {
+       setAcc(3);//both hat and boots
+    }
+ }
 
   return (
     <div className="App grid place-items-center max-h-full max-w-full overflow-hidden">
@@ -25,7 +37,7 @@ function App() {
             className=""
         />
       <Account showAccount = {showAccount} handleShowAccount = {toggleAccount}/>
-      <Shop showShop = {showShop} handleShowShop = {toggleShop}/>
+      <Shop showShop = {showShop} handleShowShop = {toggleShop} acc={acc} handleSetAcc={handleSetAcc}/>
     </div>
   );
 }

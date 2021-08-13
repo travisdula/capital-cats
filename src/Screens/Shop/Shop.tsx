@@ -4,6 +4,7 @@ import './Shop.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import cat1 from '../../Resources/cat1.png'
+import '../../Utility/Typewriter.css'
 
 interface shopProps {
   showShop : boolean;
@@ -18,7 +19,7 @@ export const Shop = ({showShop, handleShowShop} : shopProps) => {
         <div className="modal">		
         <div className="modal-wrap">	
         <img src={cat1} alt=""/>	
-            <p>A Cat should go in here</p>	          		
+          <p className="css-typing">Meow... wish I had some boots.. mew..</p>	          		
           </div>			          		
         </div>	
 

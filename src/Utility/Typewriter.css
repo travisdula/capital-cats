@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lucida Console', Consolas;  
+  font-size: 20px;
+}
+.css-typing {
+  width: 20em;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: type 3s steps(356, end);
+  animation: type 3s steps(356, end);
+}
+
+@keyframes type {
+  from { width: 0; }
+  to { width: 80%; }
+}
+
+@-webkit-keyframes type {
+  from { width: 0; }
+to { width: 100%; }
+}

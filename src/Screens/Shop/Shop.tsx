@@ -3,7 +3,7 @@ import './Shop.css';
 import cat1 from '../../Resources/cat1.png'
 import boot from '../../Resources/boots.png'
 import hat from '../../Resources/hat.png'
-import food from '../../Resources/food.jpg'
+import food from '../../Resources/cat_food_.png'
 import '../../Utility/Typewriter.css'
 
 interface shopProps {

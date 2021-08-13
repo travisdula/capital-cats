@@ -20,7 +20,7 @@ function App() {
     <div className="App grid place-items-center max-h-full overflow-hidden ">
         <img
             src={Background}
-            //style={{height:"700px", width:"450px"}}
+            style={{height:"700px", width:"450px"}}
             alt="Background"
             className="max-h-screen"
         />

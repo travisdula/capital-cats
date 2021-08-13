@@ -25,37 +25,51 @@ body {
 
 .modal-wrap {
   padding: 0 30px;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.modal-wrap * {
-  padding: 0 5px;
 }
 
 .summary {
   background-color: #ccc;
+  padding: 20px;
 }
 
 .row {
+  font-family: 'Poppins', sans-serif;
   background-color: #ccc;
   margin: 10px 0;
+  padding: 10px;
+}
+
+.row:first-child {
+  margin-top: 0;
+}
+
+.row:last-child {
+  margin-bottom: 0;
 }
 
 .column1 {
   float: left;
+  padding-right: 10px;
 }
 
 .column2 {
+  float: left;
+}
+
+.column3 {
   float: right;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 
 h5 {
   font-family: 'Poppins', sans-serif;
   text-align: left;
+  padding-top: 20px;
 }
 
 p {
@@ -203,7 +217,7 @@ p {
   margin-bottom: 20px;
   border-radius: 4px;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding: 20px;
   background-color: #fff;
   -ms-flex-item-align: center;
   align-self: center;

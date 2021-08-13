@@ -34,13 +34,6 @@ export const Shop = ({showShop, handleShowShop} : shopProps) => {
         <p className="css-typing">Meow... wish I had some boots.. mew..</p>
         </div>
         </div>
-
-      <div className="modal">
-        <div className="modal-wrap">
-          <img src={cat1} alt="Cat"/>
-          <p>A Cat should go in here</p>
-        </div>
-      </div>
     </div>
   );
 };
